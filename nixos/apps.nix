@@ -1,0 +1,46 @@
+{ pkgs, ... }:
+
+{
+	environment.systemPackages = [
+		pkgs.bat
+		pkgs.btop
+		pkgs.brave
+		pkgs.calcurse
+		pkgs.discord
+		pkgs.dust
+		pkgs.easytag
+		pkgs.eza
+		pkgs.fastfetch
+		pkgs.feh
+		pkgs.file-roller
+		pkgs.gammastep
+		pkgs.git
+		pkgs.gnome-disk-utility
+		pkgs.impression
+		pkgs.galculator
+		pkgs.lollypop
+		pkgs.menulibre
+		pkgs.micro
+		pkgs.mpv
+		pkgs.networkmanagerapplet
+		pkgs.picom
+		pkgs.poppler
+		pkgs.qbittorrent
+		pkgs.rhythmbox
+		pkgs.ristretto
+		pkgs.rofi
+		pkgs.spectrwm
+		pkgs.termdown
+		pkgs.thunderbird
+		pkgs.trash-cli
+		pkgs.tuxguitar
+		pkgs.unzip
+		pkgs.webkitgtk_4_1
+		pkgs.xfce4-whiskermenu-plugin
+		pkgs.xz
+		pkgs.yazi
+		pkgs.zathura
+		pkgs.zathuraPkgs.zathura_pdf_mupdf
+		pkgs.zip
+	];
+}
