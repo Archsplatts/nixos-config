@@ -44,7 +44,7 @@ mkdir -p "$HOME/Images/Wallpapers"
 
 cp -r "$HOME/nixos-config-XFCE/applications"/* "$HOME/.local/share/applications/"
 cp -r "$HOME/nixos-config-XFCE/config"/* "$HOME/.config/"
-cp "$HOME/nixos-config-XFCE/bashrc" "$HOME/.bashrc"
+cp "$HOME/nixos-config-XFCE/zshrc" "$HOME/.zshrc"
 cp "$HOME/nixos-config-XFCE/catppuccin-mocha.theme" "$HOME/.local/share/xfce4/terminal/colorschemes/"
 cp "$HOME/nixos-config-XFCE/snowflakes.jpg" "$HOME/Images/Wallpapers/"
 
