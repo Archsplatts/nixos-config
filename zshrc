@@ -10,7 +10,6 @@ alias update="sudo nixos-rebuild switch --upgrade"
 alias upgrade="sudo nix-channel --add https://channels.nixos.org/nixos-26.11 nixos && sudo nixos-rebuild switch --upgrade"
 
 #   UTILS
-alias bashrc="micro $HOME/.bashrc && source $HOME/.bashrc"
 alias cdt="cd $HOME/Téléchargements"
 alias class="xprop | grep WM_CLASS"
 alias conf="micro /etc/nixos/configuration.nix"
@@ -19,6 +18,7 @@ alias fm="yazi"
 alias ls="eza --icons --group-directories-first"
 alias rm="trash -v"
 alias svl="systemctl list-unit-files --state=enabled"
+alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
 ## History file for zsh
 HISTFILE=~/.zsh_history
