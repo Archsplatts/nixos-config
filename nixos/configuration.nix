@@ -69,7 +69,17 @@
   environment.xfce.excludePackages = with pkgs; [
   	parole
   ];
-  
+
+  # ─── Zsh ────────────────────────────────────────────────
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+  };
+
+  users.defaultUserShell = pkgs.zsh;
+
   # ─── Services désactivés ────────────────────────────────
   services.printing.enable = false;
   systemd.services.ModemManager.enable = false;
