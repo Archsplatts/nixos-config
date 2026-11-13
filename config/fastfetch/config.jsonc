@@ -24,13 +24,13 @@
             "keyColor": "green"
         },
         {
-            "type": "disk",
-            "key": "├─󰋊 ",
+            "type": "memory",
+            "key": "├─ ",
             "keyColor": "green"
         },
         {
-            "type": "memory",
-            "key": "├─ ",
+            "type": "disk",
+            "key": "├─󰋊 ",
             "keyColor": "green"
         },
         {
@@ -80,13 +80,13 @@
 		    "type": "custom",
 		    "key": "├─ ",
 		    "keyColor": "blue",
-		    "format": "Bash"
+		    "format": "Zsh"
 		},
 		{
 		    "type": "wm",
 		    "key": "╰─ ",
 		    "keyColor": "blue",
-		    "format": "XFCE 4.20"
+		    "format": "XFCE"
 		},
 		{
 		  "type": "custom",
