@@ -30,6 +30,7 @@
 		pkgs.ristretto
 		pkgs.rofi
 		pkgs.spectrwm
+		pkgs.starship
 		pkgs.termdown
 		pkgs.thunderbird
 		pkgs.trash-cli
