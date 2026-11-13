@@ -31,7 +31,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 echo -e "${JAUNE}[2/4] Copie des fichiers nix${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-sudo cp -r "$HOME/nixos/nixos"/* "/etc/nixos/"
+sudo cp -r "$HOME/nixos-config-XFCE/nixos"/* "/etc/nixos/"
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[3/4] Copie des dotfiles${NC}"
@@ -42,11 +42,11 @@ mkdir -p "$HOME/.local/share/xfce4/terminal/colorschemes"
 mkdir -p "$HOME/Documents/Notes"
 mkdir -p "$HOME/Images/Wallpapers"
 
-cp -r "$HOME/nixos/applications"/* "$HOME/.local/share/applications/"
-cp -r "$HOME/nixos/config"/* "$HOME/.config/"
-cp "$HOME/nixos/bashrc" "$HOME/.bashrc"
-cp "$HOME/nixos/catppuccin-mocha.theme" "$HOME/.local/share/xfce4/terminal/colorschemes/"
-cp "$HOME/nixos/snowflakes.jpg" "$HOME/Images/Wallpapers/"
+cp -r "$HOME/nixos-config-XFCE/applications"/* "$HOME/.local/share/applications/"
+cp -r "$HOME/nixos-config-XFCE/config"/* "$HOME/.config/"
+cp "$HOME/nixos-config-XFCE/bashrc" "$HOME/.bashrc"
+cp "$HOME/nixos-config-XFCE/catppuccin-mocha.theme" "$HOME/.local/share/xfce4/terminal/colorschemes/"
+cp "$HOME/nixos-config-XFCE/snowflakes.jpg" "$HOME/Images/Wallpapers/"
 
 chmod u+x "$HOME/.config/rofi/scripts"/*
 
