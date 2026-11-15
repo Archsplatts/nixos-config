@@ -27,7 +27,7 @@
     LC_MONETARY = "fr_FR.UTF-8";
     LC_NAME = "fr_FR.UTF-8";
     LC_NUMERIC = "fr_FR.UTF-8";
-    LC_PAPER = "fr_FR.UTF-8";
+    LC_PAPER = "fr_FR.UTF-8"; 
     LC_TELEPHONE = "fr_FR.UTF-8";
     LC_TIME = "fr_FR.UTF-8";
   };
@@ -94,11 +94,18 @@
     pulse.enable = true;
   };
 
-  # ─── Utilisateur ──────────────────────────────────────── 
+  # ─── PAM limits ────────────────────────────────────────
+  security.pam.loginLimits = [
+    { domain = "@audio"; item = "memlock"; type = "-"; value = "unlimited"; }
+    { domain = "@audio"; item = "rtprio";  type = "-"; value = "99"; }
+    { domain = "@audio"; item = "nice";    type = "-"; value = "-19"; }
+  ];
+
+ # ─── Utilisateur ──────────────────────────────────────── 
   users.users."bloods" = {
     isNormalUser = true;
     description = "bloods";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "audio" "networkmanager" "wheel" ];
   };
 
   # ─── Programmes ─────────────────────────────────────────
