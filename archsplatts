@@ -39,11 +39,13 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 mkdir -p "$HOME/.local/share/applications"
 mkdir -p "$HOME/.local/share/xfce4/terminal/colorschemes"
+mkdir -p "$HOME/.scripts"
 mkdir -p "$HOME/Documents/Notes"
 mkdir -p "$HOME/Images/Wallpapers"
 
 cp -r "$HOME/nixos-config/applications"/* "$HOME/.local/share/applications/"
 cp -r "$HOME/nixos-config/config"/* "$HOME/.config/"
+cp -r "$HOME/nixos-config/scripts"/* "$HOME/.scripts/"
 cp "$HOME/nixos-config/catppuccin-mocha.theme" "$HOME/.local/share/xfce4/terminal/colorschemes/"
 cp "$HOME/nixos-config/snowflakes.jpg" "$HOME/Images/Wallpapers/"
 cp "$HOME/nixos-config/zshrc" "$HOME/.zshrc"
