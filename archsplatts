@@ -51,6 +51,7 @@ cp "$HOME/nixos-config/snowflakes.jpg" "$HOME/Images/Wallpapers/"
 cp "$HOME/nixos-config/zshrc" "$HOME/.zshrc"
 
 chmod u+x "$HOME/.config/rofi/scripts"/*
+chmod u+x "$HOME/.scripts"/*
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[4/4] Génération de la configuration${NC}"
