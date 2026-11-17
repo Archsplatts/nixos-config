@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -euo pipefail 
+
+JAUNE='\033[1;33m'
+NC='\033[0m'
+
+echo -e "${JAUNE}=== Script de maintenance NixOS ===${NC}"
+echo
+
+echo -e "${JAUNE}>>> Mise à jour...${NC}"
+sudo nixos-rebuild switch --upgrade
+echo
+
+echo -e "${JAUNE}>>> Nettoyage...${NC}"
+sudo nix-env -p /nix/var/nix/profiles/system --delete-generations +3
+sudo nix-collect-garbage
+echo
+
+echo -e "${JAUNE}=== Maintenance terminée ===${NC}"
+
